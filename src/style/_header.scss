@@ -1,0 +1,12 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(./fonts/Montserrat-Medium.ttf);
+}
+
+
+body {
+  background-color: $back;
+  color: $text;
+  user-select: none;
+  font-family: Montserrat;
+}
