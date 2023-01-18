@@ -1,23 +1,65 @@
-// @font-face {
-//   font-family: Montserrat;
-//   src: url(./fonts/Montserrat-Medium.ttf);
-// }
+.topbar {
+  background: rgba(30, 33, 44, 1);
 
-.header {
-  max-width: 1920px;
-  min-height: 84px;
+  &_container {
+    min-height: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(203, 197, 197);
+    font-family: Lato-400;
+  }
+}
+
+.number a {
+  text-decoration: none;
+  color:  rgb(203, 197, 197);
+}
+
+.nav ul {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  list-style-type: none;
 
-    &_container {
-      width: 1230px;
+  & li:hover {
+      cursor: pointer;
+      color: rgb(14, 188, 14);
+  }
+}
+
+.choice {
+  display: flex;
+  justify-content: space-between;
+  gap: 64px;
+
+  &_lang {
       display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 132px;
+      gap: 12px;
+  }
 
-    }
+  &_account {
+      display: flex;
+      gap: 10px;
+
+      & a {
+          text-decoration: none;
+          color:  rgb(203, 197, 197);
+      }
+  }
+}
+
+.navigation {
+  background: #FFF;
+
+  &_container {
+    min-height: 84px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 132px;
+
+  }
 }
 
 .left {
@@ -34,6 +76,7 @@
 .left_nav ul {
   display: flex;
   gap: 40px;
+  font-family: Lato-700;
   font-size: 16px;
   line-height: 26px;
   color: #424551;
@@ -45,10 +88,6 @@
 
 .sale {
   color: red;
-
-  &:hover {
-    font-size: 20px;
-  }
 }
 
 .right {
@@ -70,9 +109,19 @@
     border: 1px solid #D7DADD;
     border-radius: 4px;
     background: #FFF;
-    color: #9A9CA5;
+    color: rgba(154, 156, 165, 1);
     font-size: 14px;
+
+    &::placeholder {
+      color: rgba(154, 156, 165, 1);
+      font-family: Lato-400;
+      font-size: 14px;
+      line-height: 21px;
+    }
   }
+
+
+
 
   & button {
     position: absolute;
@@ -88,7 +137,7 @@
   
 .shopping {
   display: flex;
-  gap: 40px;
+  gap: 20px;
 
   &_heart,
   &_carriage {
@@ -98,16 +147,17 @@
 
     & button {
       border: none;
-      background: #FFF;
+      background: none;
       cursor: pointer;
-    }
-
-    & p {
-      font-size: 16px;
-      line-height: 26px;
     }
   }
 }  
+
+.heart_number {
+  font-family: Lato-400;
+  font-size: 16px;
+  line-height: 26px;
+}
 
 .carriage_number {
   width: 23px;
@@ -120,4 +170,46 @@
   color: #FFF;
   font-size: 12px;
   line-height: 18px;
+  font-family: Lato-900;
+}
+
+.vl {
+  background: linear-gradient( #FFF, rgb(211, 209, 209), #FFF);
+  width: 1px;
+  height: 22px;
+}
+
+.offer {
+  min-height: 34px;
+  background: rgba(23, 105, 106, 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 18px;
+
+  &_content {
+    & span {
+      color: #FFF;
+      font-family: Lato-900;
+      font-size: 12px;
+      line-height: 18px;
+    }
+
+    & a {
+      font-family: Lato-400;
+      font-size: 12px;
+      line-height: 18px;
+      color: #FFF;
+    }
+  }
+
+  & button {
+    border: none;
+    background: none;
+
+    & img:hover {
+      width: 8px;
+      cursor: pointer;
+    }
+  }
 }
