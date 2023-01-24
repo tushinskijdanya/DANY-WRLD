@@ -74,7 +74,7 @@
             }
 
             &_buttons {
-                margin-bottom: 181px;
+                margin-bottom: 235px;
 
                 & button {
                     &.button3 {
@@ -126,7 +126,7 @@
 }
 
 .progress {
-    // position: relative;
+    position: relative;
     width: 178px;
 
     & progress {
@@ -137,8 +137,9 @@
     }
 
     & span {
-        // position: absolute;
-        // top: 19px;
+        position: absolute;
+        left: 0;
+        bottom: 12px;
         font-family: Ubuntu-700;
         font-size: 28px;
         line-height: 42px;
@@ -149,7 +150,7 @@
 
 .progress1 {
     width: 178px;
-    // position: relative;
+    position: relative;
 
     & progress {
         width: 178px;
@@ -163,6 +164,8 @@
         font-size: 28px;
         line-height: 42px;
         color: #424551;
-        // position: absolute;
+        position: absolute;
+        left: 0;
+        bottom: 12px;
     }
 }
