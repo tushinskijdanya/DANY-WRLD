@@ -172,134 +172,6 @@
 //     }
 // }
 
-@media screen and (device-width: 1600px) {
-    div {width: 1100px;}
-
-    .child_content {
-        width: 100%;
-    
-        & p {
-            font-family: Lato-700;
-            font-size: 18px;
-            line-height: 27px;
-            letter-spacing: 1px;
-            text-transform: uppercase;
-            font-style: normal;
-            margin-bottom: 12px;
-            color: #1E212C;
-        }
-    
-        & h1 {
-            font-family: Lato-900;
-            font-size: 72px;
-            line-height: 94px;
-            letter-spacing: 1px;
-            font-style: normal;
-            color: #1E212C;
-            margin-bottom: 60px;
-        }
-    
-        &_buttons {
-            margin-bottom: 235px;
-    
-            & button {
-                &.button3 {
-                    width: 172px;
-                    height: 52px;
-                    font-family: Lato-700;
-                    font-size: 16px;
-                    line-height: 52px;
-                    letter-spacing: 0.5px;
-                    color: #17696A;
-                    border-radius: 4px;
-                    border: 2px solid #17696A;
-                    background: none;
-                    margin-right: 14px;
-    
-                    &:hover {
-                        cursor: pointer;
-                        background: #17696A;
-                        color: #FFF;
-                    }
-                }
-    
-                &.button4 {
-                    width: 229px;
-                    height: 52px;
-                    background: #17696A;
-                    color: #FFF;
-                    font-size: 16px;
-                    line-height: 52px;
-                    letter-spacing: 0.5px;
-                    border-radius: 4px;
-                    border: 2px solid #17696A;
-    
-                    &:hover {
-                        cursor: pointer;
-                        background: none;
-                        color: #17696A;
-                    }
-                }
-            }
-        }
-    
-        &_progress {
-            display: flex;
-            gap: 4px;
-        }
-    }
-    
-    .progress {
-        position: relative;
-        width: 178px;
-    
-        & progress {
-            width: 178px;
-            height: 0;
-            border: 2px solid #8a8b91;
-            border-radius: 4px;
-        }
-    
-        & span {
-            position: absolute;
-            left: 0;
-            bottom: 12px;
-            font-family: Ubuntu-700;
-            font-size: 28px;
-            line-height: 42px;
-            color: #8a8b91;
-    
-        }
-    
-        &:hover {
-            cursor: pointer;
-        }
-    }
-    
-    .progress1 {
-        width: 178px;
-        position: relative;
-    
-        & progress {
-            width: 178px;
-            height: 0;
-            border: 2px solid #424551;
-            border-radius: 4px;
-        }
-    
-        & span {
-            font-family: Ubuntu-700;
-            font-size: 28px;
-            line-height: 42px;
-            color: #424551;
-            position: absolute;
-            left: 0;
-            bottom: 12px;
-        }
-    }
-
-}
-
 .belonging_position {
     position: relative;
 }
@@ -315,6 +187,11 @@
     & img {
         width: 100%;
         margin-bottom: 16px;
+
+        &:hover {
+            cursor: pointer;
+            opacity: 0.4;
+        }
     }
 
     & p {
@@ -323,6 +200,11 @@
         font-size: 20px;
         line-height: 30px;
         color: #424551;
+
+        &:hover {
+            cursor: pointer;
+            color: #bec1cb;
+        }
     }
 }
 
@@ -468,3 +350,20 @@
         bottom: 12px;
     }
 }
+
+@media screen and (max-width: 1600px) {
+    .menswear_child {
+        top: -580px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .menswear_child {
+        top: -480px;
+        
+        &_buttons {
+            margin-bottom: 135px;
+        }
+    }
+}
+
