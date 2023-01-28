@@ -1,5 +1,10 @@
 // DOUBLE !!!
 
+.double {
+    // margin-bottom: 375px;
+    margin-bottom: 555px;
+}
+
 .menswear {
     // position: relative;
 
@@ -208,16 +213,6 @@
     }
 }
 
-
-
-
-
-
-
-
-
-
-
 // EXPERIENCE
 
 .menswear_child_position {
@@ -353,16 +348,91 @@
 
 @media screen and (max-width: 1600px) {
     .menswear_child {
-        top: -580px;
+        top: -530px;
+        &_buttons {
+            margin-bottom: 135px;
+        }
     }
+
+
 }
 
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 1440px) {
+    .double {
+        // margin-bottom: 275px;
+        margin-bottom: 455px;
+    }
+
+    .menswear_child_position {
+        padding-left: 75px;
+
+    }
+
     .menswear_child {
         top: -480px;
         
         &_buttons {
             margin-bottom: 135px;
+        }
+    }
+
+    .menswear_child { 
+        & p {
+            font-size: 10px;
+            line-height: 20px;
+            margin-bottom: none;
+        }
+    
+        & h1 {
+            font-size: 60px;
+            line-height: 60px;
+        }
+    }
+
+    .progress {
+        width: 78px;
+    
+        & progress {
+            width: 78px;
+        }
+    
+        & span {
+            font-size: 20px;
+            line-height: 35px;  
+        }
+    }
+    
+    .progress1 {
+        width: 78px;
+    
+        & progress {
+            width: 78px;
+        }
+    
+        & span {
+            font-size: 20px;
+            line-height: 35px;
+        }
+    }
+
+    .belonging_position {
+        width: 920px;
+    }
+
+    .belonging {
+        width: 920px;
+        
+        & img {
+            width: 290px;
+            margin-bottom: 16px;
+        }
+    
+        & p {
+            text-align: center;
+            font-family: Lato-700;
+            font-size: 20px;
+            line-height: 30px;
+            color: #424551;
         }
     }
 }
