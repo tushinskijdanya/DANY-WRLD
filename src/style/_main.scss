@@ -437,3 +437,131 @@
     }
 }
 
+// ARRIVALS
+
+.arrivals {
+    &_content {
+        margin-bottom: 60px;
+
+        & h3 {
+            font-family: Lato-900;
+            font-size: 46px;
+            line-height: 60px;
+            text-align: center; 
+            margin-bottom: 24px;
+        }
+
+        & p, a {
+            font-family: Lato-400;
+            font-size: 18px;
+            line-height: 27px;
+            color: #787A80;
+            text-align: center;
+            display: block;
+        }
+
+        & a {
+            color: rgba(23, 105, 106, 1);
+        }
+    }
+
+    &_cards {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+        margin-bottom: 96px;
+    } 
+
+    &_progress {
+        text-align: center;
+        margin-bottom: 180px;
+
+        & progress {
+            width: 30px;
+            height: 0;
+            border: 3px solid #B3B7BC;
+            border-radius: 3px;
+            margin-right: 12px;
+
+            &:not(:first-child):hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    &_progress1 {
+        & progress {
+            border: 3px solid #424551;
+        }
+    }
+
+    &_progress2 {
+        margin-right: 0px;
+    }
+}
+
+.arricard_img {
+    width: 100%;
+    margin-bottom: 16px;
+
+    &:hover {
+        cursor: grab;
+        box-shadow: 0px 16px 44px 9px rgba(55, 64, 71, 0.2);
+    }
+}
+
+.arricard {
+    &_image,
+    &_image_star,
+    &_image_star1 {
+        position: relative;
+    }
+
+    
+
+    &_content {
+        padding-left: 16px;
+
+        & p {
+            font-family: Lato-400;
+            font-size: 18px;
+            line-height: 27px;
+            color: #424551;
+            margin-bottom: 8px;
+        }
+
+        & span {
+            font-family: Lato-700;
+            font-size: 20px;
+            line-height: 26px;
+            color: #1E212C;
+        }
+    }
+}
+
+.like {
+    height: 32px;
+    width: 32px;
+    background: #FFF;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 16px;
+    // bottom: 16px;
+    bottom: 32px;
+
+    &:hover {
+        cursor: pointer;
+        background: #d8dae2;
+    }
+}
+
+.star {
+    position: absolute;
+    top: 17px;
+    right: 17px;
+}
+
