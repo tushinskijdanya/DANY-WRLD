@@ -565,3 +565,118 @@
     right: 17px;
 }
 
+// BIGCARDS
+
+.bigcards {
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 180px;
+
+    & p {
+        font-family: Lato-700;
+        font-size: 14px;
+        line-height: 21px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: #1E212C;
+        margin-bottom: 12px;
+    }
+
+    & h2 {
+        font-family: Lato-900;
+        font-size: 32px;
+        line-height: 42px;
+        color: #1E212C;
+        margin-bottom: 40px;
+    }
+
+    & span {
+        font-family: Lato-400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #1E212C;
+    }
+}
+
+
+
+.firstrow {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 16px;
+
+    & img {
+        width: 100%;
+    }
+}
+
+.sale70 {
+    position: relative;
+
+    &_content {
+        position: absolute;
+        top: 60px;
+        left: 60px;
+    }
+}
+
+.sweaters {
+    position: relative;
+
+    &_content {
+        position: absolute;
+        top: 60px;
+        left: 60px;
+        width: 362px;
+    }
+}
+
+.secondrow {
+    display: flex;
+    gap: 16px;
+}
+
+.winter2023 {
+    position: relative;
+    width: 61%;
+
+    & img.parcel_img {
+       width: 100%;
+    }
+
+    &_content {
+        position: absolute;
+        top: 60px;
+        left: 60px;
+        width: 317px;
+    }
+}
+
+.subscribers {
+    // width: 735px;
+    // height: 500px;
+    width: 39%;
+    padding-top: 120px;
+    padding-left: 296px;
+    background: #E5E8ED;
+    border-radius: 4px;
+    position: relative;
+
+    & img {
+        width: 100%;
+    }
+
+    &_content {
+        position: absolute;
+        top: 60px;
+        left: 60px;
+
+        & h2 {
+            margin-bottom: 32px;
+        }
+
+        & span {
+            color: #424551;
+        }
+    }
+}
