@@ -187,28 +187,31 @@
     justify-content: space-between;
     position: absolute;
     top: -60px;
-    
 
-    & img {
-        width: 100%;
-        margin-bottom: 16px;
-
-        &:hover {
-            cursor: pointer;
-            opacity: 0.4;
+    &_what {
+        & img {
+            width: 100%;
+            margin-bottom: 16px;
         }
-    }
-
-    & p {
-        text-align: center;
-        font-family: Lato-700;
-        font-size: 20px;
-        line-height: 30px;
-        color: #424551;
+    
+        & p {
+            text-align: center;
+            font-family: Lato-700;
+            font-size: 20px;
+            line-height: 30px;
+            color: #424551;
+        }
 
         &:hover {
             cursor: pointer;
-            color: #bec1cb;
+
+            & img {
+                opacity: 0.4;
+            }
+
+            & p {
+                color: #bec1cb;
+            }
         }
     }
 }
@@ -765,6 +768,52 @@ button.transparent {
         background: #17696A;
         border-radius: 0px 4px 4px 0px;
         border: 0px solid #17696A;
+    }
+}
+
+// CATEGORIES
+
+.categories {
+
+    & h3 {
+        font-family: Lato-900;
+        font-size: 46px;
+        line-height: 60px;
+        text-align: center; 
+        margin-bottom: 60px;
+    }
+
+    &_circles {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 180px;
+
+        &_cards {
+            & img {
+                width: 100%;
+                margin-bottom: 24px;
+            }
+
+            & p {
+                text-align: center;
+                font-family: Lato-700;
+                font-size: 20px;
+                line-height: 30px;
+                color: #1E212C;
+            }
+
+            &:hover {
+                cursor: pointer;
+
+                & p {
+                    color: #bec1cb;
+                }
+
+                & img {
+                    opacity: 0.4;
+                }
+            }
+        }
     }
 }
 
