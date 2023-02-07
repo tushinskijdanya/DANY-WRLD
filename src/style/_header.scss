@@ -1,7 +1,7 @@
 .topbar {
   background: rgba(30, 33, 44, 1);
 
-  &_container {
+  &_wrapper {
     min-height: 44px;
     display: flex;
     justify-content: space-between;
@@ -52,7 +52,7 @@
 .navigation {
   background: #FFF;
 
-  &_container {
+  &_wrapper {
     min-height: 84px;
     display: flex;
     justify-content: space-between;

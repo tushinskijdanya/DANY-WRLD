@@ -1,62 +1,97 @@
 // DOUBLE !!!
 
-.double {
-    // margin-bottom: 375px;
-    margin-bottom: 555px;
-}
+// .double {
+//     margin-bottom: 555px;
+// }
 
-.menswear {
-    // position: relative;
+// .menswear {
+//     &_photo {
+//         width: 100%;
+//         position: relative;
 
-    &_photo {
-        width: 100%;
-        position: relative;
+//         & img {
+//             width: 100%;
+//         }
 
-        & img {
-            width: 100%;
-        }
+//         & button {
+//             width: 48px;
+//             height: 48px;
+//             border-radius: 50%;
+//             border: none;
+//             background: #FFF;
+//             padding-left: 16px;
+//             padding-top: 18.5px;
+//             padding-right: 14px;
+//             padding-bottom: 18.5px;
 
-        & button {
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            border: none;
-            background: #FFF;
-            padding-left: 16px;
-            padding-top: 18.5px;
-            padding-right: 14px;
-            padding-bottom: 18.5px;
+//             &:hover {
+//                 cursor: pointer;
+//                 background: rgb(245, 244, 241);
+//             }
 
-            &:hover {
-                cursor: pointer;
-                background: rgb(245, 244, 241);
-            }
+//             &.button1 {
+//                 position: absolute;
+//                 top: 47%;
+//                 left: 32px;
+//             }
 
-            &.button1 {
-                position: absolute;
-                top: 47%;
-                left: 32px;
-            }
+//             &.button2 {
+//                 position: absolute;
+//                 top: 47%;
+//                 right: 32px;
+//             }
+//         }    
+//     }
+// }
 
-            &.button2 {
-                position: absolute;
-                top: 47%;
-                right: 32px;
-            }
-        }    
-    }
+// .belonging_position {
+//     position: relative;
+// }
 
-    // &_child {
-    //     position: absolute;
-    //     top: 140px;
-    //     left: 345px;
-    // }
-}
+// .belonging {
+//     width: 1230px;
+//     display: flex;
+//     justify-content: space-between;
+//     position: absolute;
+//     top: -60px;
 
-// .child_content {
+//     &_what {
+//         & img {
+//             width: 100%;
+//             margin-bottom: 16px;
+//         }
+    
+//         & p {
+//             text-align: center;
+//             font-family: Lato-700;
+//             font-size: 20px;
+//             line-height: 30px;
+//             color: #424551;
+//         }
+
+//         &:hover {
+//             cursor: pointer;
+
+//             & img {
+//                 opacity: 0.4;
+//             }
+
+//             & p {
+//                 color: #bec1cb;
+//             }
+//         }
+//     }
+// }
+
+// .menswear_child_position {
+//     position: relative;
+// }
+
+// .menswear_child {
 //     width: 724px;
-//     // background-color: aqua;
-
+//     position: absolute;
+//     top: -660px;
+    
 //     & p {
 //         font-family: Lato-700;
 //         font-size: 18px;
@@ -177,58 +212,141 @@
 //     }
 // }
 
-.belonging_position {
-    position: relative;
-}
+// @media screen and (max-width: 1600px) {
+//     .menswear_child {
+//         top: -530px;
+//         &_buttons {
+//             margin-bottom: 135px;
+//         }
+//     }
 
-.belonging {
-    width: 1230px;
-    display: flex;
-    justify-content: space-between;
-    position: absolute;
-    top: -60px;
 
-    &_what {
-        & img {
-            width: 100%;
-            margin-bottom: 16px;
-        }
+// }
+
+// @media screen and (max-width: 1440px) {
+//     .double {
+//         // margin-bottom: 275px;
+//         margin-bottom: 455px;
+//     }
+
+//     .menswear_child_position {
+//         padding-left: 75px;
+
+//     }
+
+//     .menswear_child {
+//         top: -480px;
+        
+//         &_buttons {
+//             margin-bottom: 135px;
+//         }
+//     }
+
+//     .menswear_child { 
+//         & p {
+//             font-size: 10px;
+//             line-height: 20px;
+//             margin-bottom: none;
+//         }
     
-        & p {
-            text-align: center;
-            font-family: Lato-700;
-            font-size: 20px;
-            line-height: 30px;
-            color: #424551;
-        }
+//         & h1 {
+//             font-size: 60px;
+//             line-height: 60px;
+//         }
+//     }
+
+//     .progress {
+//         width: 78px;
+    
+//         & progress {
+//             width: 78px;
+//         }
+    
+//         & span {
+//             font-size: 20px;
+//             line-height: 35px;  
+//         }
+//     }
+    
+//     .progress1 {
+//         width: 78px;
+    
+//         & progress {
+//             width: 78px;
+//         }
+    
+//         & span {
+//             font-size: 20px;
+//             line-height: 35px;
+//         }
+//     }
+
+//     .belonging_position {
+//         width: 920px;
+//     }
+
+//     .belonging {
+//         width: 920px;
+        
+//         & img {
+//             width: 290px;
+//             margin-bottom: 16px;
+//         }
+    
+//         & p {
+//             text-align: center;
+//             font-family: Lato-700;
+//             font-size: 20px;
+//             line-height: 30px;
+//             color: #424551;
+//         }
+//     }
+// }
+
+// MENSWEAR
+
+.menswear {
+    background: url(./images/main/menswear/bigphoto.png) no-repeat;
+    background-position: center center;
+    min-height: 800px;
+    padding-top: 140px;
+    padding-bottom: 180px;
+    position: relative;
+    // background: aqua;
+
+    & button.background_button {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        border: none;
+        background: #FFF;
+        padding-left: 16px;
+        padding-top: 18.5px;
+        padding-right: 14px;
+        padding-bottom: 18.5px;
 
         &:hover {
             cursor: pointer;
+            background: rgb(245, 244, 241);
+        }
 
-            & img {
-                opacity: 0.4;
-            }
+        &.button1 {
+            position: absolute;
+            left: 32px;
+            top: 376px;
+        }
 
-            & p {
-                color: #bec1cb;
-            }
+        &.button2 {
+            position: absolute;
+            right: 32px;
+            top: 376px;
         }
     }
 }
 
-// EXPERIENCE
-
-.menswear_child_position {
-    position: relative;
-}
-
-.menswear_child {
+.menswear_wrapper {
     width: 724px;
-    // background-color: aqua;
-    position: absolute;
-    top: -660px;
     
-
     & p {
         font-family: Lato-700;
         font-size: 18px;
@@ -251,7 +369,8 @@
     }
 
     &_buttons {
-        margin-bottom: 235px;
+        // margin-bottom: 235px;
+        margin-bottom: 215px;
 
         & button {
             &.button3 {
@@ -349,84 +468,19 @@
     }
 }
 
-@media screen and (max-width: 1600px) {
-    .menswear_child {
-        top: -530px;
-        &_buttons {
-            margin-bottom: 135px;
-        }
-    }
-
-
+.belongin {
+    position: relative;
+    top: -60px;
+    margin-bottom: 180px;
 }
 
-@media screen and (max-width: 1440px) {
-    .double {
-        // margin-bottom: 275px;
-        margin-bottom: 455px;
-    }
+.belongin_wrapper {
+    display: flex;
+    justify-content: space-between;
 
-    .menswear_child_position {
-        padding-left: 75px;
-
-    }
-
-    .menswear_child {
-        top: -480px;
-        
-        &_buttons {
-            margin-bottom: 135px;
-        }
-    }
-
-    .menswear_child { 
-        & p {
-            font-size: 10px;
-            line-height: 20px;
-            margin-bottom: none;
-        }
-    
-        & h1 {
-            font-size: 60px;
-            line-height: 60px;
-        }
-    }
-
-    .progress {
-        width: 78px;
-    
-        & progress {
-            width: 78px;
-        }
-    
-        & span {
-            font-size: 20px;
-            line-height: 35px;  
-        }
-    }
-    
-    .progress1 {
-        width: 78px;
-    
-        & progress {
-            width: 78px;
-        }
-    
-        & span {
-            font-size: 20px;
-            line-height: 35px;
-        }
-    }
-
-    .belonging_position {
-        width: 920px;
-    }
-
-    .belonging {
-        width: 920px;
-        
+    &_what {
         & img {
-            width: 290px;
+            // width: 100%;
             margin-bottom: 16px;
         }
     
@@ -437,8 +491,21 @@
             line-height: 30px;
             color: #424551;
         }
+
+        &:hover {
+            cursor: pointer;
+
+            & img {
+                opacity: 0.4;
+            }
+
+            & p {
+                color: #bec1cb;
+            }
+        }
     }
 }
+
 
 // ARRIVALS
 
@@ -472,7 +539,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        gap: 30px;
+        // gap: 30px;
         margin-bottom: 96px;
     } 
 
@@ -505,7 +572,7 @@
 }
 
 .arricard_img {
-    width: 100%;
+    // width: 100%;
     margin-bottom: 16px;
 
     &:hover {
@@ -813,6 +880,148 @@ button.transparent {
                     opacity: 0.4;
                 }
             }
+        }
+    }
+}
+
+
+
+
+
+
+
+
+
+.hi {
+    max-width: 1920px;
+    min-height: 800px;
+    padding-left: 32px;
+    padding-right: 32px;
+    padding-top: 140px;
+    background-image: url("./images/main/menswear/bigphoto.png");
+
+    .hi_child {
+        width: 724px;
+        // background-color: aqua;
+        
+
+        & p {
+            font-family: Lato-700;
+            font-size: 18px;
+            line-height: 27px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-style: normal;
+            margin-bottom: 12px;
+            color: #1E212C;
+        }
+
+        & h1 {
+            font-family: Lato-900;
+            font-size: 72px;
+            line-height: 94px;
+            letter-spacing: 1px;
+            font-style: normal;
+            color: #1E212C;
+            margin-bottom: 60px;
+        }
+
+        &_buttons {
+            margin-bottom: 235px;
+
+            & button {
+                &.button3 {
+                    width: 172px;
+                    height: 52px;
+                    font-family: Lato-700;
+                    font-size: 16px;
+                    line-height: 52px;
+                    letter-spacing: 0.5px;
+                    color: #17696A;
+                    border-radius: 4px;
+                    border: 2px solid #17696A;
+                    background: none;
+                    margin-right: 14px;
+
+                    &:hover {
+                        cursor: pointer;
+                        background: #17696A;
+                        color: #FFF;
+                    }
+                }
+
+                &.button4 {
+                    width: 229px;
+                    height: 52px;
+                    background: #17696A;
+                    color: #FFF;
+                    font-size: 16px;
+                    line-height: 52px;
+                    letter-spacing: 0.5px;
+                    border-radius: 4px;
+                    border: 2px solid #17696A;
+
+                    &:hover {
+                        cursor: pointer;
+                        background: none;
+                        color: #17696A;
+                    }
+                }
+            }
+        }
+
+        &_progress {
+            display: flex;
+            gap: 4px;
+        }
+    }
+
+    .progress {
+        position: relative;
+        width: 178px;
+
+        & progress {
+            width: 178px;
+            height: 0;
+            border: 2px solid #8a8b91;
+            border-radius: 4px;
+        }
+
+        & span {
+            position: absolute;
+            left: 0;
+            bottom: 12px;
+            font-family: Ubuntu-700;
+            font-size: 28px;
+            line-height: 42px;
+            color: #8a8b91;
+
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .progress1 {
+        width: 178px;
+        position: relative;
+
+        & progress {
+            width: 178px;
+            height: 0;
+            border: 2px solid #424551;
+            border-radius: 4px;
+        }
+
+        & span {
+            font-family: Ubuntu-700;
+            font-size: 28px;
+            line-height: 42px;
+            color: #424551;
+            position: absolute;
+            left: 0;
+            bottom: 12px;
         }
     }
 }
