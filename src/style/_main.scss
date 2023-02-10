@@ -328,15 +328,19 @@
         &:hover {
             cursor: pointer;
             background: rgb(245, 244, 241);
+
+            & svg path {
+                fill: #17696A;
+            }
         }
 
-        &.button1 {
+        &.button_left {
             position: absolute;
             left: 32px;
             top: 376px;
         }
 
-        &.button2 {
+        &.button_right {
             position: absolute;
             right: 32px;
             top: 376px;
@@ -373,16 +377,18 @@
         margin-bottom: 215px;
 
         & button {
-            &.button3 {
-                width: 172px;
-                height: 52px;
-                font-family: Lato-700;
-                font-size: 16px;
-                line-height: 52px;
-                letter-spacing: 0.5px;
+            padding-left: 40px;
+            padding-right: 40px;
+            font-family: Lato-700;
+            font-size: 16px;
+            line-height: 52px;
+            letter-spacing: 0.5px;
+            border-radius: 4px;
+            border: 2px solid #17696A;
+
+            &.button_sale {
                 color: #17696A;
                 border-radius: 4px;
-                border: 2px solid #17696A;
                 background: none;
                 margin-right: 14px;
 
@@ -393,16 +399,9 @@
                 }
             }
 
-            &.button4 {
-                width: 229px;
-                height: 52px;
+            &.button_menswear {
                 background: #17696A;
                 color: #FFF;
-                font-size: 16px;
-                line-height: 52px;
-                letter-spacing: 0.5px;
-                border-radius: 4px;
-                border: 2px solid #17696A;
 
                 &:hover {
                     cursor: pointer;
@@ -511,6 +510,9 @@
 // ARRIVALS
 
 .arrivals {
+    padding-left: 30px;
+    padding-right: 30px;
+
     &_content {
         margin-bottom: 60px;
 
@@ -588,8 +590,6 @@
     &_image_star1 {
         position: relative;
     }
-
-    
 
     &_content {
         padding-left: 16px;
@@ -1013,6 +1013,10 @@ button.transparent {
             font-size: 14px;
             line-height: 21px;
             color: #9A9CA5;
+        }
+
+        &:focus {
+            outline: none;
         }
     }
 

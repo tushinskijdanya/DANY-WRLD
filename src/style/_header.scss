@@ -33,14 +33,34 @@
   justify-content: space-between;
   gap: 64px;
 
+  & span {
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+
   &_lang {
       display: flex;
+      justify-content: center;
+      align-items: center;
       gap: 12px;
+
+      & a {
+        text-decoration: none;
+        color:  rgb(203, 197, 197);
+      }
   }
 
   &_account {
       display: flex;
+      justify-content: center;
+      align-items: center;
       gap: 10px;
+
+      &_image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
 
       & a {
           text-decoration: none;
@@ -48,6 +68,12 @@
       }
   }
 }
+
+// .exile_currency:hover {
+//   svg path {
+//     fill: rgb(14, 188, 14);
+//   }
+// }
 
 .navigation {
   background: #FFF;
@@ -87,7 +113,7 @@
 }
 
 .sale {
-  color: red;
+  color: rgb(255, 0, 0);
 }
 
 .right {
@@ -117,10 +143,11 @@
       font-size: 14px;
       line-height: 21px;
     }
+
+    &:focus {
+      outline: none;
+    }
   }
-
-
-
 
   & button {
     position: absolute;
@@ -143,12 +170,12 @@
     display: flex;
     align-items: center;
     gap: 9px;
+  }
 
-    & button {
-      border: none;
-      background: none;
-      cursor: pointer;
-    }
+  & button {
+    border: none;
+    background: none;
+    cursor: pointer;
   }
 }  
 
@@ -161,7 +188,7 @@
 .carriage_number {
   width: 23px;
   height: 20px;
-  background: #83CEA4;
+  background: rgba(3, 206, 164, 1);
   border-radius: 4px;
   display: flex;
   justify-content: center;
