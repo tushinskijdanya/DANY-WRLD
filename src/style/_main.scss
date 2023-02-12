@@ -228,6 +228,13 @@ button.secondary {
     }
 }
 
+h2 {
+    font-family: Lato-900;
+    font-size: 32px;
+    line-height: 42px;
+    color: #1E212C;
+}
+
 h3 {
     font-family: Lato-900;
     font-size: 46px;
@@ -381,10 +388,6 @@ h3 {
     }
 
     & h2 {
-        font-family: Lato-900;
-        font-size: 32px;
-        line-height: 42px;
-        color: #1E212C;
         margin-bottom: 40px;
     }
 
@@ -686,6 +689,11 @@ button.winter_button i {
     &:hover {
         cursor: grab;
         box-shadow: 0px 16px 44px 9px rgba(55, 64, 71, 0.2);
+
+        .slide-focus_left,
+        .slide-focus_right {
+            display: block;
+        }
     }
 
 }
@@ -739,9 +747,197 @@ button.winter_button i {
     }
 }
 
-.saleUP {
+.saleUP_button {
     text-align: center;
 }
+
+.slide-focus_left {
+    position: absolute;
+    top: 212px;
+    left: 23px;
+    display: none;
+}
+
+.slide-focus_right {
+    position: absolute;
+    top: 212px;
+    right: 23px;
+    display: none;
+}
+
+.slide-focus_left,
+.slide-focus_right {
+
+    & button {
+        padding: 5px 5px;
+        background: none;
+        border-radius: 7px;
+        border: none;
+
+        &:hover {
+            cursor: pointer;
+            border: 1px solid rgba(229, 232, 237, 1) ;
+            box-shadow: -1px 1px 100px -48px rgba(34, 60, 80, 0.2) inset;
+
+            & svg {
+                height: 18px;
+            }
+            
+            & svg path {
+                fill: #acaeb5;
+            }
+        }
+    }
+}
+
+
+.focus-content {
+    padding: 20px 16px 16px 16px;
+    position: absolute;
+    display: none;
+}
+
+.trying {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.dimensions {
+    display: flex;
+    gap: 8px;
+
+    & p {
+        width: 24px;
+        height: 24px;
+        border: 1px solid rgb(214, 215, 220);
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #424551;
+        font-family: Lato-400;
+        font-size: 12px;
+        line-height: 18px;
+
+        &:hover {
+            cursor: pointer;
+            border: 1px solid #17696A;
+        }
+    }
+}
+
+.colour {
+    display: flex;
+    gap: 8px;
+
+    & div {
+        width: 24px;
+        height: 24px;
+        border-radius: 50%;
+        border: 1px solid #D7DADD;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &:hover {
+            cursor: pointer;
+            border: 1px solid #17696A;
+        }
+    }
+
+    & span {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+
+        &.black {
+            background: #000000;
+        }
+
+        &.brown {
+            background: #874E19;
+        }
+
+        &.blue {
+            background: #C0DDED;
+        }
+    }
+}
+
+.add-button {
+    text-align: center;
+
+    & button {
+        padding-left: 129.5px;
+        padding-right: 129.5px;
+        background: #17696A;
+        border-radius: 4px;
+        border: 2px #17696A solid;
+        display: flex;
+        align-items: center;
+        cursor: pointer;
+
+        & span {
+            font-family: Lato-700;
+            font-size: 14px;
+            line-height: 44px;
+            letter-spacing: 0.5px;
+            color: #FFFFFF;
+            margin-left: 9px;
+
+        }
+
+        &:active {
+            background: #6a1717;
+        }
+    }
+}
+
+.focus-card:hover {
+    .focus-content {
+        display: block;
+    }
+}
+
+// STORE
+
+.store {
+    width: 100%;
+    background: #1E212C;
+    margin-bottom: 120px;
+}
+
+.store-hero {
+    display: flex;
+    justify-content: space-between;
+    max-height: 300px;
+}
+
+.store_image {
+    position: relative;
+    left: -28px;
+    top: -30px;
+}
+
+.store_content {
+    padding-top: 60px;
+    max-width: 600px;
+
+    & h2 {
+        color: #FFF;
+        margin-bottom: 48px;
+    }
+}
+
+.store_references {
+    display: flex;
+    gap: 24px;
+}
+
+
+
+
 
 
 
