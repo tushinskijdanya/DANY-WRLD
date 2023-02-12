@@ -1,307 +1,43 @@
-// DOUBLE !!!
+// TRANSPARENT BUTTON 
 
-// .double {
-//     margin-bottom: 555px;
-// }
+button.standart {
+    padding-left: 40px;
+    padding-right: 40px;
+    font-family: Lato-700;
+    font-size: 16px;
+    line-height: 52px;
+    letter-spacing: 0.5px;
+    border-radius: 4px;
+    border: 2px solid rgba(23, 105, 106, 1);
+    color: rgba(23, 105, 106, 1);
+    background: none;
 
-// .menswear {
-//     &_photo {
-//         width: 100%;
-//         position: relative;
+    &:hover {
+        cursor: pointer;
+        background: rgba(23, 105, 106, 1);
+        color: #FFF;
+    }
+}
 
-//         & img {
-//             width: 100%;
-//         }
+button.secondary {
+    padding-left: 32px;
+    padding-right: 32px;
+    background: none;
+    font-size: Lato-700;
+    font-size: 14px;
+    line-height: 44px;
+    letter-spacing: 0.5px;
+    color: #17696A;
+    border: 2px solid #17696A;
+    border-radius: 4px;
 
-//         & button {
-//             width: 48px;
-//             height: 48px;
-//             border-radius: 50%;
-//             border: none;
-//             background: #FFF;
-//             padding-left: 16px;
-//             padding-top: 18.5px;
-//             padding-right: 14px;
-//             padding-bottom: 18.5px;
+    &:hover {
+        cursor: pointer;
+        background: #17696A;
+        color: #FFF;
+    }
+}
 
-//             &:hover {
-//                 cursor: pointer;
-//                 background: rgb(245, 244, 241);
-//             }
-
-//             &.button1 {
-//                 position: absolute;
-//                 top: 47%;
-//                 left: 32px;
-//             }
-
-//             &.button2 {
-//                 position: absolute;
-//                 top: 47%;
-//                 right: 32px;
-//             }
-//         }    
-//     }
-// }
-
-// .belonging_position {
-//     position: relative;
-// }
-
-// .belonging {
-//     width: 1230px;
-//     display: flex;
-//     justify-content: space-between;
-//     position: absolute;
-//     top: -60px;
-
-//     &_what {
-//         & img {
-//             width: 100%;
-//             margin-bottom: 16px;
-//         }
-    
-//         & p {
-//             text-align: center;
-//             font-family: Lato-700;
-//             font-size: 20px;
-//             line-height: 30px;
-//             color: #424551;
-//         }
-
-//         &:hover {
-//             cursor: pointer;
-
-//             & img {
-//                 opacity: 0.4;
-//             }
-
-//             & p {
-//                 color: #bec1cb;
-//             }
-//         }
-//     }
-// }
-
-// .menswear_child_position {
-//     position: relative;
-// }
-
-// .menswear_child {
-//     width: 724px;
-//     position: absolute;
-//     top: -660px;
-    
-//     & p {
-//         font-family: Lato-700;
-//         font-size: 18px;
-//         line-height: 27px;
-//         letter-spacing: 1px;
-//         text-transform: uppercase;
-//         font-style: normal;
-//         margin-bottom: 12px;
-//         color: #1E212C;
-//     }
-
-//     & h1 {
-//         font-family: Lato-900;
-//         font-size: 72px;
-//         line-height: 94px;
-//         letter-spacing: 1px;
-//         font-style: normal;
-//         color: #1E212C;
-//         margin-bottom: 60px;
-//     }
-
-//     &_buttons {
-//         margin-bottom: 235px;
-
-//         & button {
-//             &.button3 {
-//                 width: 172px;
-//                 height: 52px;
-//                 font-family: Lato-700;
-//                 font-size: 16px;
-//                 line-height: 52px;
-//                 letter-spacing: 0.5px;
-//                 color: #17696A;
-//                 border-radius: 4px;
-//                 border: 2px solid #17696A;
-//                 background: none;
-//                 margin-right: 14px;
-
-//                 &:hover {
-//                     cursor: pointer;
-//                     background: #17696A;
-//                     color: #FFF;
-//                 }
-//             }
-
-//             &.button4 {
-//                 width: 229px;
-//                 height: 52px;
-//                 background: #17696A;
-//                 color: #FFF;
-//                 font-size: 16px;
-//                 line-height: 52px;
-//                 letter-spacing: 0.5px;
-//                 border-radius: 4px;
-//                 border: 2px solid #17696A;
-
-//                 &:hover {
-//                     cursor: pointer;
-//                     background: none;
-//                     color: #17696A;
-//                 }
-//             }
-//         }
-//     }
-
-//     &_progress {
-//         display: flex;
-//         gap: 4px;
-//     }
-// }
-
-// .progress {
-//     position: relative;
-//     width: 178px;
-
-//     & progress {
-//         width: 178px;
-//         height: 0;
-//         border: 2px solid #8a8b91;
-//         border-radius: 4px;
-//     }
-
-//     & span {
-//         position: absolute;
-//         left: 0;
-//         bottom: 12px;
-//         font-family: Ubuntu-700;
-//         font-size: 28px;
-//         line-height: 42px;
-//         color: #8a8b91;
-
-//     }
-
-//     &:hover {
-//         cursor: pointer;
-//     }
-// }
-
-// .progress1 {
-//     width: 178px;
-//     position: relative;
-
-//     & progress {
-//         width: 178px;
-//         height: 0;
-//         border: 2px solid #424551;
-//         border-radius: 4px;
-//     }
-
-//     & span {
-//         font-family: Ubuntu-700;
-//         font-size: 28px;
-//         line-height: 42px;
-//         color: #424551;
-//         position: absolute;
-//         left: 0;
-//         bottom: 12px;
-//     }
-// }
-
-// @media screen and (max-width: 1600px) {
-//     .menswear_child {
-//         top: -530px;
-//         &_buttons {
-//             margin-bottom: 135px;
-//         }
-//     }
-
-
-// }
-
-// @media screen and (max-width: 1440px) {
-//     .double {
-//         // margin-bottom: 275px;
-//         margin-bottom: 455px;
-//     }
-
-//     .menswear_child_position {
-//         padding-left: 75px;
-
-//     }
-
-//     .menswear_child {
-//         top: -480px;
-        
-//         &_buttons {
-//             margin-bottom: 135px;
-//         }
-//     }
-
-//     .menswear_child { 
-//         & p {
-//             font-size: 10px;
-//             line-height: 20px;
-//             margin-bottom: none;
-//         }
-    
-//         & h1 {
-//             font-size: 60px;
-//             line-height: 60px;
-//         }
-//     }
-
-//     .progress {
-//         width: 78px;
-    
-//         & progress {
-//             width: 78px;
-//         }
-    
-//         & span {
-//             font-size: 20px;
-//             line-height: 35px;  
-//         }
-//     }
-    
-//     .progress1 {
-//         width: 78px;
-    
-//         & progress {
-//             width: 78px;
-//         }
-    
-//         & span {
-//             font-size: 20px;
-//             line-height: 35px;
-//         }
-//     }
-
-//     .belonging_position {
-//         width: 920px;
-//     }
-
-//     .belonging {
-//         width: 920px;
-        
-//         & img {
-//             width: 290px;
-//             margin-bottom: 16px;
-//         }
-    
-//         & p {
-//             text-align: center;
-//             font-family: Lato-700;
-//             font-size: 20px;
-//             line-height: 30px;
-//             color: #424551;
-//         }
-//     }
-// }
 
 // MENSWEAR
 
@@ -376,7 +112,9 @@
         // margin-bottom: 235px;
         margin-bottom: 215px;
 
-        & button {
+        & button.button_menswear {
+            background: #17696A;
+            color: #FFF;
             padding-left: 40px;
             padding-right: 40px;
             font-family: Lato-700;
@@ -385,31 +123,15 @@
             letter-spacing: 0.5px;
             border-radius: 4px;
             border: 2px solid #17696A;
+            margin-left: 24px;
 
-            &.button_sale {
-                color: #17696A;
-                border-radius: 4px;
+            &:hover {
+                cursor: pointer;
                 background: none;
-                margin-right: 14px;
-
-                &:hover {
-                    cursor: pointer;
-                    background: #17696A;
-                    color: #FFF;
-                }
-            }
-
-            &.button_menswear {
-                background: #17696A;
-                color: #FFF;
-
-                &:hover {
-                    cursor: pointer;
-                    background: none;
-                    color: #17696A;
-                }
+                color: #17696A;
             }
         }
+
     }
 
     &_progress {
@@ -506,6 +228,12 @@
     }
 }
 
+h3 {
+    font-family: Lato-900;
+    font-size: 46px;
+    line-height: 60px;
+    color: rgba(30, 33, 44, 1);
+}
 
 // ARRIVALS
 
@@ -517,11 +245,8 @@
         margin-bottom: 60px;
 
         & h3 {
-            font-family: Lato-900;
-            font-size: 46px;
-            line-height: 60px;
-            text-align: center; 
             margin-bottom: 24px;
+            text-align: center;
         }
 
         & p, a {
@@ -590,9 +315,11 @@
     &_image_star1 {
         position: relative;
     }
+}
 
-    &_content {
-        padding-left: 16px;
+.arricard_content,
+.trending_card_content {
+    padding-left: 16px;
 
         & p {
             font-family: Lato-400;
@@ -608,7 +335,6 @@
             line-height: 26px;
             color: #1E212C;
         }
-    }
 }
 
 .like {
@@ -634,208 +360,11 @@
     position: absolute;
     top: 17px;
     right: 17px;
+    cursor: auto;
 }
 
 // BIGCARDS
 
-// .bigcards {
-//     padding-left: 30px;
-//     padding-right: 30px;
-//     margin-bottom: 180px;
-
-//     & p {
-//         font-family: Lato-700;
-//         font-size: 14px;
-//         line-height: 21px;
-//         letter-spacing: 1px;
-//         text-transform: uppercase;
-//         color: #1E212C;
-//         margin-bottom: 12px;
-//     }
-
-//     & h2 {
-//         font-family: Lato-900;
-//         font-size: 32px;
-//         line-height: 42px;
-//         color: #1E212C;
-//         margin-bottom: 40px;
-//     }
-
-//     & span {
-//         font-family: Lato-400;
-//         font-size: 14px;
-//         line-height: 21px;
-//         color: #1E212C;
-//     }
-// }
-
-// button.transparent {
-//     padding-left: 32px;
-//     padding-right: 32px;
-//     background: none;
-//     font-size: Lato-700;
-//     font-size: 14px;
-//     line-height: 44px;
-//     letter-spacing: 0.5px;
-//     color: #17696A;
-//     border: 2px solid #17696A;
-//     border-radius: 4px;
-
-//     & img {
-//         margin-left: 10px;
-//     }
-
-//     &:hover {
-//         cursor: pointer;
-//         background: #17696A;
-//         color: #FFF;
-//     }
-// }
-
-// .firstrow {
-//     display: flex;
-//     gap: 16px;
-//     margin-bottom: 16px;
-
-//     & img {
-//         width: 100%;
-//     }
-// }
-
-// .sale70 {
-//     position: relative;
-
-//     &_content {
-//         position: absolute;
-//         top: 60px;
-//         left: 60px;
-//     }
-// }
-
-// .sweaters {
-//     position: relative;
-
-//     &_content {
-//         position: absolute;
-//         top: 60px;
-//         left: 60px;
-//         width: 362px;
-
-//         & button {
-//             margin-bottom: 79px;
-//         }
-//     }
-// }
-
-// .deadline_indication {
-//     width: 209px;
-//     display: flex;
-//     justify-content: space-between;
-// }
-
-// .time {
-//     text-align: center;
-
-//     & h5 {
-//         font-family: Lato-700;
-//         font-size: 28px;
-//         line-height: 42px;
-//         color: #1E212C;
-//     }
-// }
-
-// .secondrow {
-//     display: flex;
-//     gap: 16px;
-// }
-
-// .winter2023 {
-//     position: relative;
-//     width: 61%;
-
-//     & img.parcel_img {
-//        width: 100%;
-//     }
-
-//     &_content {
-//         position: absolute;
-//         top: 60px;
-//         left: 60px;
-//         width: 317px;
-//     }
-// }
-
-// .subscribers {
-//     width: 40%;
-//     max-height: 500px;
-//     padding-top: 120px;
-//     padding-left: 296px;
-//     background: #E5E8ED;
-//     border-radius: 4px;
-//     position: relative;
-
-//     & img {
-//         width: 100%;
-//     }
-
-//     &_content {
-//         position: absolute;
-//         top: 60px;
-//         left: 60px;
-//         max-width: 391px;
-
-//         & h2 {
-//             margin-bottom: 32px;
-//         }
-
-//         & span {
-//             color: #424551;
-//         }
-//     }
-// }
-
-// .inputline {
-//     margin-top: 8px;
-//     margin-bottom: 20px;
-//     width: 360px;
-//     height: 44px;
-//     position: relative;
-
-//     & input {
-//         width: 100%;
-//         height: 100%;
-//         padding-right: 145px;
-//         padding-left: 16px;
-//         font-family: Lato-400;
-//         font-size: 14px;
-//         line-height: 21px;
-//         border: 1px solid #D7DADD;
-//         border-radius: 4px;
-
-//         &::placeholder {
-//             font-family: Lato-400;
-//             font-size: 14px;
-//             line-height: 21px;
-//             color: #9A9CA5;
-//         }
-//     }
-
-//     & button {
-//         position: absolute;
-//         top: 0px;
-//         right: 0px;
-//         padding-left: 32px;
-//         padding-right: 32px;
-//         font-family: Lato-700;
-//         font-size: 14px;
-//         line-height: 44px;
-//         letter-spacing: 0.5px;
-//         color: #FFFFFF;
-//         background: #17696A;
-//         border-radius: 0px 4px 4px 0px;
-//         border: 0px solid #17696A;
-//     }
-// }
 .bigcards {
     padding-left: 30px;
     padding-right: 30px;
@@ -864,29 +393,6 @@
         font-size: 14px;
         line-height: 21px;
         color: #1E212C;
-    }
-}
-
-button.transparent {
-    padding-left: 32px;
-    padding-right: 32px;
-    background: none;
-    font-size: Lato-700;
-    font-size: 14px;
-    line-height: 44px;
-    letter-spacing: 0.5px;
-    color: #17696A;
-    border: 2px solid #17696A;
-    border-radius: 4px;
-
-    & img {
-        margin-left: 10px;
-    }
-
-    &:hover {
-        cursor: pointer;
-        background: #17696A;
-        color: #FFF;
     }
 }
 
@@ -961,6 +467,10 @@ button.transparent {
     }
 }
 
+button.winter_button i {
+    margin-left: 10px;
+}
+
 .subscribers {
     width: 735px;
     height: 500px;
@@ -990,7 +500,7 @@ button.transparent {
     }
 }
 
-.inputline {
+.search_email {
     margin-top: 8px;
     margin-bottom: 20px;
     width: 360px;
@@ -1018,6 +528,10 @@ button.transparent {
         &:focus {
             outline: none;
         }
+
+        &:focus::placeholder {
+            color: transparent;
+          }
     }
 
     & button {
@@ -1046,12 +560,9 @@ button.transparent {
 
 .categories {
 
-    & h3 {
-        font-family: Lato-900;
-        font-size: 46px;
-        line-height: 60px;
-        text-align: center; 
+    & h3 { 
         margin-bottom: 60px;
+        text-align: center;
     }
 
     &_circles {
@@ -1087,6 +598,152 @@ button.transparent {
         }
     }
 }
+
+// TRENDING
+
+.trending {
+    width: 100%;
+    background: rgba(229, 232, 237, 1);
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-bottom: 100px;
+}
+
+.trending_saleUP_table {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+
+}
+
+.trending_saleUP_choice button {
+    width: 45px;
+    height: 45px;
+    padding: 18.5px 15px 18.5px 15px;
+    background: none;
+    border: none;
+
+    &:hover {
+        cursor: pointer;
+        background: #17696A;
+        border-radius: 50%;
+
+        & svg path {
+            fill: #FFF;
+        }
+    }
+}
+
+.trending_cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 96px;
+}
+
+.trending_card_image {
+    position: relative;
+    margin-bottom: 16px;
+    border-radius: 4px;
+    max-height: 440px;
+
+    &:hover {
+        cursor: grab;
+        box-shadow: 0px 16px 44px 9px rgba(55, 64, 71, 0.2);
+    }
+}
+
+.like.tren {
+    bottom: 16px;
+}
+
+.trending_card {
+    margin-bottom: 96px;
+}
+
+.trending_button {
+    text-align: center;
+}
+
+// saleUP
+
+.saleUP {
+    width: 100%;
+    margin-bottom: 150px;
+}
+
+.saleUP_cards {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 96px;
+}
+
+.saleUP_card_image {
+    max-height: 440px;
+    border-radius: 4px;
+    position: relative;
+    margin-bottom: 16px;
+
+    &:hover {
+        cursor: grab;
+        box-shadow: 0px 16px 44px 9px rgba(55, 64, 71, 0.2);
+    }
+
+}
+
+.reduction {
+    position: absolute;
+    top: 16px;
+    left: 16px;
+    padding: 1px 8px;
+    background: rgba(255, 66, 66, 1);
+    border-radius: 4px;
+
+    & p {
+        font-family: Lato-700;
+        line-height: 26px;
+        color: #FFFFFF;
+    }
+
+    &:hover {
+        cursor: auto;
+    }
+}
+
+.saleUP_card_content {
+    padding-left: 16px;
+
+    & p.content-text {
+        font-family: Lato-400;
+        line-height: 27px;
+        color: #424551;
+        margin-bottom: 8px;
+    }
+
+    & p {
+        & span.new-price {
+            font-family: Lato-700;
+            line-height: 31px;
+            color: #FF4242;
+            margin-right: 12px;
+            font-size: 24px;
+        }
+
+        & span.old-price {
+            font-family: Lato-400;
+            line-height: 27px;
+            color: #787A80;
+            text-decoration-line: line-through;
+            font-size: 18px;
+            vertical-align: super;
+        }
+    }
+}
+
+.saleUP {
+    text-align: center;
+}
+
+
 
 
 

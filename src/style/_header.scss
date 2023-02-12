@@ -50,6 +50,11 @@
       }
   }
 
+  .currency {
+    margin-left: 0;
+    margin-right: 6px;
+  }
+
   &_account {
       display: flex;
       justify-content: center;
@@ -123,7 +128,7 @@
   align-items: center;
 }
 
-.search {
+.search_products {
   position: relative;
   width: 380px;
 
@@ -146,6 +151,10 @@
 
     &:focus {
       outline: none;
+    }
+
+    &:focus::placeholder {
+      color: transparent;
     }
   }
 
