@@ -503,7 +503,8 @@ button.winter_button i {
     }
 }
 
-.search_email {
+.subscribers_send_email,
+.subscribe_send {
     margin-top: 8px;
     margin-bottom: 20px;
     width: 360px;
@@ -1042,7 +1043,7 @@ button.winter_button i {
 
 .blog {
     width: 100%;
-    margin-bottom: 85px;
+    margin-bottom: 100px;
 }
 
 .blog_table {
@@ -1115,9 +1116,150 @@ button.winter_button i {
     transform: rotate(90deg);
 }
 
+// CONSULTING
 
+.consulting {
+    width: 100%;
+    margin-bottom: 100px;
+}
 
+.consulting_row {
+    display: flex;
+    justify-content: space-between;
+    
+    & div {
+        cursor: context-menu;
+    }
+}
 
+// SUBSCRIBE
+
+.subscribe {
+    width: 100%;
+    background: #F4F5F7;
+}
+
+.subscribe_filling {
+    display: flex;
+    justify-content: space-between;
+}
+
+.subscribe-text {
+    color: rgba(66, 69, 81, 1);
+    font-family: Lato-400;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.subscribe_content {
+    padding-top: 100px;
+
+    & h3 {
+        margin-bottom: 24px;
+    }
+
+    & p {
+        color: rgba(120, 122, 128, 1);
+        font-family: Lato-400;
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 32px;
+    }
+}
+
+.subscribe_choice {
+    width: 304px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 32px;
+
+    & button {
+        padding: 5.5px 16px 5.5px 16px;
+        border: 1px solid #D7DADD;
+        border-radius: 4px;
+        color: #787A80;
+        font-family: Lato-700;
+        font-size: 14px;
+        line-height: 21px;
+        background: none;
+
+        &:hover {
+            cursor: pointer;
+            background: #17696A;
+            border: 1px solid #17696A;
+            color: #FFF;
+        }
+
+        &:active {
+            background: #6a1717;
+        }
+    }
+}
+
+.subscribe_send {
+    width: 495px;
+    margin-bottom: 24px;
+}
+
+.subscribe_image {
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+.new {
+    padding: 50px;
+  }
+  
+  .signature {
+    display: block;
+  }
+  
+  .signature input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+  }
+  
+  .signature label {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .signature label:before {
+    content: "";
+    background-color: transparent;
+    border: 1px solid #17696A;
+    border-radius: 3px;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+      inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 12px;
+  }
+  
+  .signature input:checked + label:after {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 8px;
+    left: 4px;
+    width: 15px;
+    height: 12px;
+    background-image: url(./images/main/petty/tick.svg);
+    background-repeat: no-repeat;
+  }
+
+  .signature input:checked  + label:before {
+    background: #17696A;
+}
+  
 
 
 
