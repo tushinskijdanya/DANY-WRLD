@@ -16,6 +16,15 @@
   color:  rgb(203, 197, 197);
 }
 
+.kk {
+  display: flex;
+  gap: 40px;
+  font-family: Lato-700;
+  font-size: 16px;
+  line-height: 26px;
+  color: #424551;
+}
+
 .nav ul {
   display: flex;
   justify-content: space-between;
@@ -23,9 +32,9 @@
   list-style-type: none;
 
   & li:hover {
-      cursor: pointer;
-      color: rgb(14, 188, 14);
-  }
+    cursor: pointer;
+    color: rgb(203, 96, 38);
+}
 }
 
 .choice {
@@ -248,3 +257,4 @@
     }
   }
 }
+

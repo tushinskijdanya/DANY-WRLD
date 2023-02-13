@@ -1,0 +1,89 @@
+footer {
+    background: #1E212C;
+}
+
+.footer-hero {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 40px;
+
+    & p {
+        color: #FFFFFF;
+        font-family: Lato-700;
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 12px;
+    }
+}
+
+.footer-nav ul {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    list-style-type: none;
+    color: rgb(203, 197, 197);
+
+    & li:hover {
+        cursor: pointer;
+        color: rgb(255, 89, 0);
+    }
+}
+
+.get-tell,
+.get-mail {
+
+    & span {
+        color:  rgb(203, 197, 197);
+        font-family: Lato-400;
+        font-size: 16px;
+        line-height: 26px;
+        margin-right: 4px;
+    }
+
+    & a {
+        text-decoration: none;
+        color:  rgb(203, 197, 197);
+        font-family: Lato-400;
+        font-size: 16px;
+        line-height: 26px;
+        opacity: 0.6;
+    }
+}
+
+.get-tell {
+    margin-bottom: 4px;
+}
+
+.get-mail {
+    margin-bottom: 24px;
+}
+
+.get-networks {
+    display: flex;
+    gap: 12px;
+
+    & span {
+        width: 32px;
+        height: 32px;
+        background:rgba(66, 69, 81, 1);
+        border-radius: 4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: 0px 5px 25px 2px rgba(217, 73, 42, 0.42);
+
+            & svg path {
+                fill: rgb(255, 89, 0);
+            }
+        }
+    }
+}
+
+.dowload-referenc {
+    display: flex;
+    gap: 20px;
+}
