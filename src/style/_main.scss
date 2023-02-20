@@ -189,20 +189,22 @@ button.secondary {
     }
 }
 
+// BELONGIN
+
 .belongin {
-    position: relative;
-    top: -60px;
-    margin-bottom: 180px;
+    padding-bottom: 90px;
 }
 
 .belongin_wrapper {
+    position: relative;
+    top: -60px;
     display: flex;
     justify-content: space-between;
-    // gap: 30px;
+    gap: 30px;
 
     &_what {
         & img {
-            // width: 100%;
+            width: 100%;
             margin-bottom: 16px;
         }
     
@@ -245,8 +247,8 @@ h3 {
 // ARRIVALS
 
 .arrivals {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-top: 90px;
+    padding-bottom: 90px;
 
     &_content {
         margin-bottom: 60px;
@@ -274,13 +276,15 @@ h3 {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        // gap: 30px;
+        flex-wrap: wrap;
+        padding-left: 30px;
+        padding-right: 30px;
+        gap: 30px;
         margin-bottom: 96px;
     } 
 
     &_progress {
         text-align: center;
-        margin-bottom: 180px;
 
         & progress {
             width: 30px;
@@ -373,9 +377,8 @@ h3 {
 // BIGCARDS
 
 .bigcards {
-    padding-left: 30px;
-    padding-right: 30px;
-    margin-bottom: 180px;
+    padding-top: 90px;
+    padding-bottom: 90px;
 
     & p {
         font-family: Lato-700;
@@ -399,6 +402,20 @@ h3 {
     }
 }
 
+.sale70,
+.sweaters,
+.winter2023,
+.subscribers {
+    padding-top: 60px;
+    padding-left: 60px;
+}
+
+.firstrow,
+.secondrow {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
 .firstrow {
     display: flex;
     gap: 16px;
@@ -409,10 +426,8 @@ h3 {
     // background: url(.images/main/bigcards/girl.png);
     background: url(./images/main/bigcards/girl.png) no-repeat;
     background-position: center center;
-    width: 735px;
-    height: 500px;
-    padding: 60px 458px 281px 60px;
-
+    width: 39.86%;
+    
     &_content {
         width: 217px;
     }
@@ -422,8 +437,9 @@ h3 {
     // background: url(.images/main/bigcards/boy.png);
     background: url(./images/main/bigcards/boy.png) no-repeat;
     background-position: center center;
-    width: 1109px;
-    height: 500px;
+    // width: 1109px;
+    // height: 500px;
+    width: 60.14%;
     padding: 60px 687px 60px 60px;
     
     &_content {
@@ -461,9 +477,8 @@ h3 {
     // background: url(.images/main/bigcards/girl.png);
     background: url(./images/main/bigcards/parcel.png) no-repeat;
     background-position: center center;
-    width: 1109px;
-    height: 500px;
-    padding: 60px 732px 239px 60px;
+    width: 60.14%;
+    // width: calc((100% - 76px) * 0.6);
 
     &_content {
         width: 317px;
@@ -475,9 +490,9 @@ button.winter_button i {
 }
 
 .subscribers {
-    width: 735px;
-    height: 500px;
-    padding: 60px 284px 198px 60px;
+    width: 39.86%;
+    // width: calc((100% - 76px) * 0.4);
+    padding-bottom: 198px;
     background: #E5E8ED;
     border-radius: 4px;
     position: relative;
@@ -563,6 +578,8 @@ button.winter_button i {
 // CATEGORIES
 
 .categories {
+    padding-top: 90px;
+    padding-bottom: 180px;
 
     & h3 { 
         margin-bottom: 60px;
@@ -572,7 +589,8 @@ button.winter_button i {
     &_circles {
         display: flex;
         justify-content: space-between;
-        margin-bottom: 180px;
+        gap: 1%;
+        // gap: 30%;
 
         &_cards {
             & img {
@@ -610,7 +628,6 @@ button.winter_button i {
     background: rgba(229, 232, 237, 1);
     padding-top: 80px;
     padding-bottom: 80px;
-    margin-bottom: 100px;
 }
 
 .trending_saleUP_table {
@@ -672,7 +689,8 @@ button.winter_button i {
 
 .saleUP {
     width: 100%;
-    margin-bottom: 150px;
+    margin-top: 100px;
+    padding-bottom: 150px;
 }
 
 .saleUP_cards {
@@ -906,7 +924,6 @@ button.winter_button i {
 .store {
     width: 100%;
     background: #1E212C;
-    margin-bottom: 120px;
 }
 
 .store-hero {
@@ -940,7 +957,8 @@ button.winter_button i {
 
 .advantages {
     width: 100%;
-    margin-bottom: 180px;
+    padding-top: 120px;
+    padding-bottom: 90px;
 }
 
 .advantages_enumeration {
@@ -986,7 +1004,8 @@ button.winter_button i {
 
 .instagram {
     width: 100%;
-    margin-bottom: 180px;
+    padding-top: 90px;
+    padding-bottom: 90px;
 }
 
 .instagram_info {
@@ -1043,7 +1062,8 @@ button.winter_button i {
 
 .blog {
     width: 100%;
-    margin-bottom: 100px;
+    padding-bottom: 100px;
+    padding-top: 90px;
 }
 
 .blog_table {
@@ -1120,7 +1140,7 @@ button.winter_button i {
 
 .consulting {
     width: 100%;
-    margin-bottom: 100px;
+    padding-bottom: 100px;
 }
 
 .consulting_row {
