@@ -412,6 +412,7 @@ h3 {
 
 .firstrow,
 .secondrow {
+    min-height: 500px;
     padding-left: 30px;
     padding-right: 30px;
 }
@@ -491,22 +492,11 @@ button.winter_button i {
 
 .subscribers {
     width: 39.86%;
-    // width: calc((100% - 76px) * 0.4);
-    padding-bottom: 198px;
-    background: #E5E8ED;
+    background: #E5E8ED url(./images/main/bigcards/boxes.png) no-repeat right bottom;
     border-radius: 4px;
-    position: relative;
-
-    &_image {
-        position: absolute;
-        right: 0;
-        bottom: 0;
-    }
 
     &_content {
         width: 391px;
-        position: relative;
-        // z-index: 1;
 
         & h2 {
             margin-bottom: 32px;
@@ -706,6 +696,34 @@ button.winter_button i {
     margin-bottom: 96px;
 }
 
+.saleUP_card-focus_image {
+    max-height: 440px;
+    border-radius: 4px;
+    position: relative;
+    margin-bottom: 16px;
+
+    &:hover {
+        cursor: grab;
+
+        .slide-focus_left,
+        .slide-focus_right {
+            display: block;
+            animation: shows 1s;
+            @keyframes shows {
+
+                from {
+                opacity: 0;
+                }
+               
+                to {
+                opacity: 1;
+                }
+               
+               }
+        }
+    }
+}
+
 .saleUP_card_image {
     max-height: 440px;
     border-radius: 4px;
@@ -828,10 +846,12 @@ button.winter_button i {
     }
 }
 
+.saleUp_card-focus {
+    min-width: 390px;
+}
 
 .focus-content {
     padding: 20px 16px 16px 16px;
-    position: absolute;
     display: none;
 }
 
@@ -905,15 +925,18 @@ button.winter_button i {
 
 .add-button {
     text-align: center;
+    max-width: 358px;
 
     & button {
-        padding-left: 129.5px;
-        padding-right: 129.5px;
+        // padding-left: 129.5px;
+        // padding-right: 129.5px;
+        width: 100%;
         background: #17696A;
         border-radius: 4px;
         border: 2px #17696A solid;
         display: flex;
         align-items: center;
+        justify-content: center;
         cursor: pointer;
 
         & span {
@@ -932,7 +955,7 @@ button.winter_button i {
     }
 }
 
-.focus-card:hover {
+.saleUp_card-focus:hover {
     box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
     .focus-content {
         display: block;
