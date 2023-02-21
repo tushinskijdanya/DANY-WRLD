@@ -657,7 +657,10 @@ button.winter_button i {
 
 .trending_cards {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
     margin-bottom: 96px;
 }
 
@@ -669,7 +672,8 @@ button.winter_button i {
 
     &:hover {
         cursor: grab;
-        box-shadow: 0px 16px 44px 9px rgba(55, 64, 71, 0.2);
+        // box-shadow: 0px 16px 44px 9px rgba(55, 64, 71, 0.2);
+        box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
     }
 }
 
@@ -695,7 +699,10 @@ button.winter_button i {
 
 .saleUP_cards {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+    justify-content: center;
+    gap: 30px;
     margin-bottom: 96px;
 }
 
@@ -707,14 +714,26 @@ button.winter_button i {
 
     &:hover {
         cursor: grab;
-        box-shadow: 0px 16px 44px 9px rgba(55, 64, 71, 0.2);
+        // box-shadow: 0px 16px 44px 9px rgba(55, 64, 71, 0.2);
+        box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
 
         .slide-focus_left,
         .slide-focus_right {
             display: block;
+            animation: shows 1s;
+            @keyframes shows {
+
+                from {
+                opacity: 0;
+                }
+               
+                to {
+                opacity: 1;
+                }
+               
+               }
         }
     }
-
 }
 
 .reduction {
@@ -914,8 +933,18 @@ button.winter_button i {
 }
 
 .focus-card:hover {
+    box-shadow: 0px 80px 80px -20px rgba(154, 156, 165, 0.16), 0px 30px 24px -10px rgba(154, 156, 165, 0.1), 0px 12px 10px -6px rgba(154, 156, 165, 0.08), 0px 4px 4px -4px rgba(30, 33, 44, 0.05);
     .focus-content {
         display: block;
+        animation: shows 2s;
+        @keyframes shows {
+            from {
+            opacity: 0;
+            }
+            to {
+            opacity: 1;
+            }
+           }
     }
 }
 
@@ -964,6 +993,8 @@ button.winter_button i {
 .advantages_enumeration {
     display: flex;
     justify-content: space-between;
+    gap: 30px;
+    // flex-wrap: wrap; 
 }
 
 .advantages_vl {
@@ -1010,7 +1041,9 @@ button.winter_button i {
 
 .instagram_info {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    gap: 30px;
 }
 
 .instagram_content {
@@ -1062,7 +1095,7 @@ button.winter_button i {
 
 .blog {
     width: 100%;
-    padding-bottom: 100px;
+    padding-bottom: 120px;
     padding-top: 90px;
 }
 
@@ -1074,7 +1107,9 @@ button.winter_button i {
 
 .blog_cards {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    // justify-content: space-between;
+    justify-content: center;
     gap: 30px;
 }
 
@@ -1084,6 +1119,7 @@ button.winter_button i {
 
     &_content {
         padding: 24px 24px 21px 24px;
+        max-width: 600px;
 
         & h4 {
             font-family: Lato-700;
@@ -1140,7 +1176,7 @@ button.winter_button i {
 
 .consulting {
     width: 100%;
-    padding-bottom: 100px;
+    padding-bottom: 120px;
 }
 
 .consulting_row {
